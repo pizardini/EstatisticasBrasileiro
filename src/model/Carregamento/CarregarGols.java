@@ -31,7 +31,6 @@ public class CarregarGols {
                 String clube = dados[2];
                 String atleta = dados[3];
                 // Integer minuto = Integer.parseInt(dados[4].replaceAll("\"", ""));
-                // Integer.parseInt(dados[4].matches("-?\\d+") ? dados[4] : "0");
                 String tipo = dados[5];
                 
                 Gol gol = new Gol(id, rodada, clube, atleta, tipo);

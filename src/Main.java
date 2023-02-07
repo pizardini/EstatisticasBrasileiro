@@ -1,4 +1,3 @@
-import data.PartidaDAO;
 import model.MaiorPlacar;
 import model.Carregamento.Carregamento;
 
