@@ -8,12 +8,12 @@ public class Gol {
     private Integer minuto;
     private String tipo;
 
-    public Gol(Integer id, Integer rodada, String clube, String atleta, Integer minuto, String tipo) {
+    public Gol(Integer id, Integer rodada, String clube, String atleta, String tipo) {
         this.id = id;
         this.rodada = rodada;
         this.clube = clube;
         this.atleta = atleta;
-        this.minuto = minuto;
+        // this.minuto = minuto;
         this.tipo = tipo;
     }
 
@@ -31,10 +31,6 @@ public class Gol {
 
     public String getAtleta() {
         return atleta;
-    }
-
-    public Integer getMinuto() {
-        return minuto;
     }
 
     public String getTipo() {

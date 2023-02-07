@@ -17,13 +17,13 @@ public class Partida {
     private String estadoMandante;
     private String estadoVisitante;
 
-    public Partida(Integer id, Integer rodada, LocalDate data, LocalTime hora, String mandante, String visitante,
+    public Partida(Integer id, Integer rodada, String mandante, String visitante,
                    String vencedor, String arena, Integer placarMandante, Integer placarVisitante, String estadoMandante,
                    String estadoVisitante) {
         this.id = id;
         this.rodada = rodada;
-        this.data = data;
-        this.hora = hora;
+        // this.data = data;
+        // this.hora = hora;
         this.mandante = mandante;
         this.visitante = visitante;
         this.vencedor = vencedor;
@@ -42,13 +42,13 @@ public class Partida {
         return rodada;
     }
 
-    public LocalDate getData() {
-        return data;
-    }
+    // public LocalDate getData() {
+    //     return data;
+    // }
 
-    public LocalTime getHora() {
-        return hora;
-    }
+    // public LocalTime getHora() {
+    //     return hora;
+    // }
 
     public String getMandante() {
         return mandante;

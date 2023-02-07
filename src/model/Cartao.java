@@ -9,9 +9,9 @@ public class Cartao {
     private final String numCamisa;
     private final String posicao;
 
-    private final Integer minuto;
+    // private final Integer minuto;
 
-    public Cartao(Integer id, Integer rodada, String clube, String cor, String atleta, String numCamisa, String posicao, Integer minuto) {
+    public Cartao(Integer id, Integer rodada, String clube, String cor, String atleta, String numCamisa, String posicao) {
         this.id = id;
         this.rodada = rodada;
         this.clube = clube;
@@ -19,7 +19,7 @@ public class Cartao {
         this.atleta = atleta;
         this.numCamisa = numCamisa;
         this.posicao = posicao;
-        this.minuto = minuto;
+        // this.minuto = minuto;
     }
 
     public Integer getId() {
@@ -50,9 +50,9 @@ public class Cartao {
         return posicao;
     }
 
-    public Integer getMinuto() {
-        return minuto;
-    }
+    // public Integer getMinuto() {
+    //     return minuto;
+    // }
 
     @Override
     public String toString() {
@@ -64,7 +64,7 @@ public class Cartao {
                 ", atleta='" + atleta + '\'' +
                 ", numCamisa='" + numCamisa + '\'' +
                 ", posicao='" + posicao + '\'' +
-                ", minuto=" + minuto +
+                // ", minuto=" + minuto +
                 '}';
     }
 }

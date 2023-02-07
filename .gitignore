@@ -1,0 +1,10 @@
+*.class
+.vscode/
+libraries/
+
+# Ignore intellij files
+*.iml
+.idea/
+
+# Ignore intellij project files
+out/

@@ -15,15 +15,15 @@ public class Estatistica {
     private Integer impedimentos;
     private Integer escanteios;
 
-    public Estatistica(Integer id, Integer rodada, String clube, Integer chutes, Integer chutesCertos, Integer posse, Integer passes, Integer precisaoPasses, Integer faltas, Integer amarelos, Integer vermelhos, Integer impedimentos, Integer escanteios) {
+    public Estatistica(Integer id, Integer rodada, String clube, Integer chutes, Integer chutesCertos, Integer passes, Integer faltas, Integer amarelos, Integer vermelhos, Integer impedimentos, Integer escanteios) {
         this.id = id;
         this.rodada = rodada;
         this.clube = clube;
         this.chutes = chutes;
         this.chutesCertos = chutesCertos;
-        this.posse = posse;
+        // this.posse = posse;
         this.passes = passes;
-        this.precisaoPasses = precisaoPasses;
+        // this.precisaoPasses = precisaoPasses;
         this.faltas = faltas;
         this.amarelos = amarelos;
         this.vermelhos = vermelhos;
@@ -51,17 +51,17 @@ public class Estatistica {
         return chutesCertos;
     }
 
-    public Integer getPosse() {
-        return posse;
-    }
+    // public Integer getPosse() {
+    //     return posse;
+    // }
 
     public Integer getPasses() {
         return passes;
     }
 
-    public Integer getPrecisaoPasses() {
-        return precisaoPasses;
-    }
+    // public Integer getPrecisaoPasses() {
+    //     return precisaoPasses;
+    // }
 
     public Integer getFaltas() {
         return faltas;
@@ -91,9 +91,9 @@ public class Estatistica {
                 ", clube='" + clube + '\'' +
                 ", chutes=" + chutes +
                 ", chutesCertos=" + chutesCertos +
-                ", posse=" + posse +
+                // ", posse=" + posse +
                 ", passes=" + passes +
-                ", precisaoPasses=" + precisaoPasses +
+                // ", precisaoPasses=" + precisaoPasses +
                 ", faltas=" + faltas +
                 ", cartaoAmarelo=" + amarelos +
                 ", cartaoVermelho=" + vermelhos +

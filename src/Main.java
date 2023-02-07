@@ -1,13 +1,11 @@
-import model.Gol;
-
-import java.util.ArrayList;
-import java.util.List;
+import data.PartidaDAO;
 
 public class Main {
     public static void main(String[] args) {
-        List<Gol> listaGols = new ArrayList<>();
         Carregamento carregamento = new Carregamento();
-        carregamento.carregarGols();
+        System.out.println(PartidaDAO.getInstance().getlistaDePartidas().get(1));
+        System.out.println(PartidaDAO.getInstance().getlistaDePartidas().get(1).getPlacarMandante());
+        System.out.println(PartidaDAO.getInstance().getlistaDePartidas().get(1).getPlacarVisitante());
     }
 
 }
