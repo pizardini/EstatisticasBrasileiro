@@ -1,6 +1,4 @@
-import model.CartaoAmarelo;
-import model.CartaoVermelho;
-import model.MaiorPlacar;
+import model.*;
 import model.Carregamento.Carregamento;
 
 public class Main {
@@ -9,6 +7,8 @@ public class Main {
         MaiorPlacar maiorPlacar = new MaiorPlacar();
         CartaoAmarelo cartaoAmarelo = new CartaoAmarelo();
         CartaoVermelho cartaoVermelho = new CartaoVermelho();
+        GolsPenalti golsPenalti = new GolsPenalti();
+        GolsContra golsContra = new GolsContra();
     }
 
 }
