@@ -9,6 +9,7 @@ public class Main {
         CartaoVermelho cartaoVermelho = new CartaoVermelho();
         GolsPenalti golsPenalti = new GolsPenalti();
         GolsContra golsContra = new GolsContra();
+        TimeVencedor timeeVencedor = new TimeVencedor();
     }
 
 }
