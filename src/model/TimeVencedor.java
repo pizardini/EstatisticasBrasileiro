@@ -30,7 +30,7 @@ public class TimeVencedor {
             else vencedoresFormatado += vencedores.get(j);
         }
         
-        System.out.println("O(s) time(s) com mais vitórias no ano 2008 foi(foram) " + vencedoresFormatado +
+        System.out.println("O(s) time(s) com mais vitórias no ano 2008 foi(foram): \n" + vencedoresFormatado +
                 " com um total de " + maxWin + " partidas vencidas");
 
 }

@@ -24,7 +24,7 @@ public class GolsContra {
         Long numeroGols = mapaContra.get(mapaContra.keySet().iterator().next());
         for(Map.Entry<String, Long> entry: listaContra.entrySet()) {
             if(numeroGols.equals(entry.getValue())) {
-                System.out.println(entry.getKey() + " " + entry.getValue() + " gols");
+                System.out.println(entry.getKey() + ": " + entry.getValue() + " gols");
             }
         }
     }
