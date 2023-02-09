@@ -1,7 +1,7 @@
 package model;
 
 import data.GolDAO;
-import data.PartidaDAO;
+
 
 import java.util.*;
 import java.util.stream.Collectors;

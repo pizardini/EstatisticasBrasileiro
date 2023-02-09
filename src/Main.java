@@ -12,7 +12,7 @@ public class Main {
         TimeVencedor timeVencedor = new TimeVencedor();
 
         MaisGols maisGols = new MaisGols();
-
+        EstadoMenosPartidas estadoMenosPartidas = new EstadoMenosPartidas();
     }
 
 }
