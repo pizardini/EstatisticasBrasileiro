@@ -69,7 +69,7 @@ public class GUIFrame extends JFrame implements ActionListener {
         this.add(summation,BorderLayout.SOUTH);
         this.add(generalJPanel);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.setSize(600, 590);
+        this.setSize(600, 610);
         this.setLocation(400, 0);
         this.setResizable(true);
         this.setVisible(true);
