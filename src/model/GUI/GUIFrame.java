@@ -40,11 +40,12 @@ public class GUIFrame extends JFrame implements ActionListener {
     DataConverter dc;
     Vector<Vector<Object>> vectorGols;
     int skip = 0;
+    int tableLimit = 25;
 
     public GUIFrame(){
         dc = new DataConverter();
         vectorGols= dc.getListaGols();
-        model.setDataVector(vectorGols.stream().limit(25).collect(Collectors.toCollection(Vector::new)), dc.getColumn());
+        model.setDataVector(vectorGols.stream().limit(tableLimit).collect(Collectors.toCollection(Vector::new)), dc.getColumn());
         
         table.setBounds(400, 400, 400, 400);
         table.setModel(model);
@@ -90,24 +91,26 @@ public class GUIFrame extends JFrame implements ActionListener {
                 vectorGols = vectorGols.stream().filter(n->(((String) n.get(index)).toUpperCase()).contains(text.toUpperCase())).collect(Collectors.toCollection(Vector::new));
             }
             
-            model.setDataVector(vectorGols.stream().limit(25).collect(Collectors.toCollection(Vector::new)), dc.getColumn());
+            model.setDataVector(vectorGols.stream().limit(tableLimit).collect(Collectors.toCollection(Vector::new)), dc.getColumn());
             summation.setText(String.valueOf(vectorGols.size()));
 
         } else if (e.getSource() == reset){
             model.setRowCount(0);//limpa a lista
             vectorGols = dc.getListaGols();
             skip = 0;
-            model.setDataVector(vectorGols.stream().limit(25).collect(Collectors.toCollection(Vector::new)), dc.getColumn());
+            model.setDataVector(vectorGols.stream().limit(tableLimit).collect(Collectors.toCollection(Vector::new)), dc.getColumn());
             summation.setText("");
 
         } else if (e.getSource() == skipFoward){
-            model.setDataVector(vectorGols.stream().skip(skip+25).limit(25).collect(Collectors.toCollection(Vector::new)), dc.getColumn());
-            skip = skip+25;
+            if(vectorGols.size()>skip+tableLimit){
+                model.setDataVector(vectorGols.stream().skip(skip+tableLimit).limit(tableLimit).collect(Collectors.toCollection(Vector::new)), dc.getColumn());
+                skip = skip+tableLimit;
+            }
 
         } else if (e.getSource() == skipBackward){
             if(skip>0){
-                model.setDataVector(vectorGols.stream().skip(skip-25).limit(25).collect(Collectors.toCollection(Vector::new)), dc.getColumn());
-                skip=skip-25;
+                model.setDataVector(vectorGols.stream().skip(skip-tableLimit).limit(tableLimit).collect(Collectors.toCollection(Vector::new)), dc.getColumn());
+                skip=skip-tableLimit;
             }
         }
         
